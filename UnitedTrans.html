@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
   <head>
     <title>Transmission & Auto Repair | Ft.Myers | UT</title>
     <link rel="stylesheet" href="UnitedTrans.css" type="text/css">
     <script src="UnitedTrans.js" charset="utf-8"></script>
-  </head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
 
     <body>
 
       <header>
-        <h1><a class= "home" href="#">United Transmission</a></h1>
+        <h1 id="home"><a href="#home">United Transmission</a></h1>
         <nav class="inlineTop">
           <ul>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a href="#">Transmission</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Find Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#transmission">Transmission</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#Contact">Contact</a></li>
 
             <!-- set as floating button to jump to top of page-->
-            <li><a href="#">Top</a></li>
+            <li><a id="home" href="#home">Top</a></li>
           </ul>
         </nav>
         <span class="inlineFloat">Professional, Dependable, Top Notch Quality</span>
@@ -106,6 +107,7 @@
           <p>
              Monday - Friday: 9:00am - 5:00pm <br>
              Saturday: By Appointment <br>
+             Sunday: Closed
           </p>
       </div>
 
@@ -140,7 +142,7 @@
       </div>
 
 
-      <h3>About</h3>
+      <h3 id="about">About</h3>
 
       <p>
         We strive to provide you with elite customer service,
@@ -157,19 +159,16 @@
 
 
        <footer>
+         <h2>United Transmission Services Inc.</h2>
          <h3>Find us:</h3>
-         <div id="map">
-
-         </div>
-         <address class="location">
-           <map>
-
-           </map>
+         <div id="map"></div>
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoSS-uGb_q_1WeI6yMHZPESFV__q3MdGM&callback=initMap"></script>
+           <address class="location">
+           <a target="_blank" href="https://www.google.com/maps/place/United+Transmission+Services+Inc/@26.5610086,-81.8543355,17z/data=!3m1!4b1!4m5!3m4!1s0x88db154cfbe2ad51:0xa4c9eb9619060744!8m2!3d26.5610038!4d-81.8521468?hl=en"> Full Map</a>
            <h3>Location: 12541 Metro Pkwy #15 * Ft.Myers, FL</h3>
          </address>
+      </footer>
 
-
-       </footer>
     </body>
 
 </html>

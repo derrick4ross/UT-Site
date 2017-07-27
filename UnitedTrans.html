@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="UnitedTrans.css" type="text/css">
     <script src="UnitedTrans.js" charset="utf-8"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    </head>
+    <div style="width: 100%; height: 360px; padding-bottom: 25%" data-simple-slider>
+	    <img src="mercedes10801.jpg"/>
+	    <img src="audi1080.jpg"/>
+	    <img src="bmw1080.jpg"/>
+    </div>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+    <script>
+	    simpleslider.getSlider();
+    </script>
+  </head>
 
     <body>
 
+
       <header>
+        <div class="container">
         <h1 id="home"><a href="#home">United Transmission</a></h1>
         <nav class="inlineTop">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#transmission">Transmission</a></li>
+            <li><a href="#vehicles">Vehicles</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#Contact">Contact</a></li>
@@ -24,6 +35,9 @@
             <li><a id="home" href="#home">Top</a></li>
           </ul>
         </nav>
+
+
+       <div id="page-wrap">
         <span class="inlineFloat">Professional, Dependable, Top Notch Quality</span>
         <br>
         <span class="inlineFloat">Done Right the First Time</span>
@@ -32,19 +46,22 @@
 
       </header>
 
-      <div class="mStatement">
-        <h2>UT Auto</h2>
-        <p>Providing quality auto care at a fair price for SW Florida since 2004, servicing
-        forign, domestic and commercial vehicles. We use the latest diagnostic equipment to pinpoint
-        the issue and make sure the fix is the correct one. Our mechanics have combined expierence of
-        40 plus years of auto repair under them, so rest assured any issue you have we can help you!</p>
-      </div>
+      <section id="mStatement">
+        <div class="container">
+          <h2>UT Auto</h2>
+          <p>Providing quality auto care at a fair price for SW Florida since 2004, servicing
+          forign, domestic and commercial vehicles. We use the latest diagnostic equipment to pinpoint
+          the issue and make sure the fix is the correct one. Our mechanics have combined expierence of
+          40 plus years of auto repair under them, so rest assured any issue you have we can help you!</p>
+        </div>
+      </section>
 
 
 
-      <!--Types of vehicles repaires, commercial vehicles AND cars. Include makes and models.-->
-      <div id="vehThbNails">
-        <h2>Serviced Vehicles</h2>
+      <!--Types of vehicles repaired, commercial vehicles AND cars. Include makes and models.-->
+      <section id="vehicles">
+      <div id="vehContainer">
+        <h2 id="vehicles">Serviced Vehicles</h2>
           <p>United Transmission Services most forign and domestic vehicles. We also service
             commercial vehicles.</p>
 
@@ -92,10 +109,11 @@
             <li>ect...</li>
           </ul>
       </div>
+      </section>
 
 
       <!--JS.Expandable text/Button-->
-      <div class="expText">
+      <div class="servCont">
         <h2>Corperate/Dealer Rates</h2>
         <p>Special Warrenty available for Dealers and other Repair Facilities.
            Please <a href="#">Call</a> For Details.</p>
@@ -113,7 +131,7 @@
 
       <!--edit sidebar to be expandable retractable-->
       <div class="side-bar">
-        <h2>Services</h2>
+        <h2 id="services">Services</h2>
         <h3>We Provide:</h3>
           <p>
             3 Year 36,000 Mile Warranty On All Transmission Rebuilds. <br>
@@ -157,8 +175,8 @@
        </p>
 
 
-
-       <footer>
+      </div>
+      <footer id="contact">
          <h2>United Transmission Services Inc.</h2>
          <h3>Find us:</h3>
          <div id="map"></div>

@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' id="home">
 
   <head>
     <title>Transmission & Auto Repair | Ft.Myers | UT</title>
     <link rel="stylesheet" href="UnitedTrans.css" type="text/css">
     <script src="UnitedTrans.js" charset="utf-8"></script>
+    <style>
+      .slider { width: 100%; padding-bottom: 25%; }
+      .slider img { width: 100%; height: 100%;}
+      .wrapper { width: 80%; height: 100%; margin: 0 auto; }
+      @media only screen and (min-width: 1024px; min-height: 768px; ) {
+        .wrapper { width: 1024px; margin:0px auto; }
+      }
+    </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <div style="width: 100%; height: 360px; padding-bottom: 25%" data-simple-slider>
-	    <img src="mercedes10801.jpg"/>
-	    <img src="audi1080.jpg"/>
-	    <img src="bmw1080.jpg"/>
-    </div>
     <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
-    <script>
-	    simpleslider.getSlider();
-    </script>
+
   </head>
 
     <body>
-
-
+      <div id="page-wrap">
       <header>
-        <div class="container">
-        <h1 id="home"><a href="#home">United Transmission</a></h1>
-        <nav class="inlineTop">
+        <div id="branding">
+        <h1><a href="#home">United Transmission</a></h1>
+        <nav>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#vehicles">Vehicles</a></li>
@@ -32,35 +32,47 @@
             <li><a href="#Contact">Contact</a></li>
 
             <!-- set as floating button to jump to top of page-->
-            <li><a id="home" href="#home">Top</a></li>
+            <li><a id="top" href="#home">Top</a></li>
           </ul>
         </nav>
 
+        <!--slider-->
+        <div class="wrapper">
+          <div id="myslider" class="slider">
+            <img src="mercedes10801.jpg"/>
+            <img src="audi1080.jpg"/>
+            <img src="bmw1080.jpg"/>
+          </div>
+        </div>
 
-       <div id="page-wrap">
-        <span class="inlineFloat">Professional, Dependable, Top Notch Quality</span>
-        <br>
-        <span class="inlineFloat">Done Right the First Time</span>
-        <br>
-        <span class="inlineFloat">Specialize on Mecedees, BMW and Audi Transmissions</span>
-
+        <script>
+          simpleslider.getSlider();
+        </script>
+        <!--slider end-->
       </header>
+
+      <div class="motto">
+        <ul>
+          <li>Professional, Dependable, Top Notch Quality</li>
+          <li>Done Right the First Time</li>
+          <li>Specializing On Repairs for Mecedees, BMW and Audi Transmissions</li>
+        </ul>
+      </div>
 
       <section id="mStatement">
         <div class="container">
           <h2>UT Auto</h2>
           <p>Providing quality auto care at a fair price for SW Florida since 2004, servicing
-          forign, domestic and commercial vehicles. We use the latest diagnostic equipment to pinpoint
+          foregin, domestic and commercial vehicles. We use the latest diagnostic equipment to pinpoint
           the issue and make sure the fix is the correct one. Our mechanics have combined expierence of
           40 plus years of auto repair under them, so rest assured any issue you have we can help you!</p>
-        </div>
       </section>
 
 
 
       <!--Types of vehicles repaired, commercial vehicles AND cars. Include makes and models.-->
       <section id="vehicles">
-      <div id="vehContainer">
+      <div id="container">
         <h2 id="vehicles">Serviced Vehicles</h2>
           <p>United Transmission Services most forign and domestic vehicles. We also service
             commercial vehicles.</p>
@@ -113,7 +125,7 @@
 
 
       <!--JS.Expandable text/Button-->
-      <div class="servCont">
+      <div class="container">
         <h2>Corperate/Dealer Rates</h2>
         <p>Special Warrenty available for Dealers and other Repair Facilities.
            Please <a href="#">Call</a> For Details.</p>
@@ -186,7 +198,16 @@
            <h3>Location: 12541 Metro Pkwy #15 * Ft.Myers, FL</h3>
          </address>
       </footer>
-
+      </div>
     </body>
+    <script>
+      simpleslider.getSlider({
+        container: document.getElementById('myslider'),
+        init: -100,
+        show: 0,
+        end: 100,
+        unit: '%'
+      });
+    </script>
 
 </html>

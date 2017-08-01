@@ -1,23 +1,86 @@
-html{
-  background-color: lavender;
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0px;
+  padding:0px;
 }
 
 body{
-  background-color: #fff;
+  background-color:#ffffff;
   font-family: sans-serif;
-  padding: 0;
-  margin: 0;
+  padding:0;
+  margin:auto;
+  height:100%;
+  width:100%;
 }
 
-#page-wrap {
-  width: 70%;
-  margin: auto;
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
 #map {
-    width: 18em;
-    height: 14em;
-    background-color: grey;
+    width:18em;
+    height:14em;
+    background-color:grey;
+}
+
+header, footer{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8599a 3px solid;
+}
+
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding:1em 1em 1em 1em;
+}
+
+header #top{
+  position:relative;
+}
+
+header #branding h1{
+  margin:0;
+
+}
+
+header nav{
+  float:right;
+  margin: 0 0 0 0 ;
+}
+
+header a:hover{
+  color:#bebfdf;
+  font-weight:bold;
+}
+
+.motto ul{
+  margin:0;
+  padding:0;
+  text-align:center;
+  display:inline-block;
+}
+
+.motto li{
+  color:#000000;
+  text-decoration:;
+  font-weight:bold;
+  float:left;
+  margin:0 auto;
+  padding: 2em 2em 2em 2em;
 }

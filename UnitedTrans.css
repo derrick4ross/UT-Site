@@ -13,9 +13,14 @@ body{
 }
 
 .container{
-  width:80%;
-  margin:auto;
+  background-color:gray;
+  width:960px;
+  margin:10em auto;
   overflow:hidden;
+}
+
+.container h2{
+  padding: 50px 0 20px 0;
 }
 
 #map {
@@ -24,12 +29,23 @@ body{
     background-color:grey;
 }
 
+#page-wrap{
+
+
+}
+
 header, footer{
   background:#35424a;
+  background-image:url("cogs5.jpg");
+  background-repeat:repeat;
   color:#ffffff;
   padding-top:30px;
-  min-height:70px;
+  min-width:320px;
   border-bottom:#e8599a 3px solid;
+}
+
+header{
+  padding-bottom:70px;
 }
 
 
@@ -56,12 +72,13 @@ header #top{
 
 header #branding h1{
   margin:0;
+  padding:0 0 0 20px;
 
 }
 
 header nav{
   float:right;
-  margin: 0 0 0 0 ;
+  padding:0 15px 0 0;
 }
 
 header a:hover{
@@ -69,18 +86,30 @@ header a:hover{
   font-weight:bold;
 }
 
-.motto ul{
-  margin:0;
-  padding:0;
-  text-align:center;
-  display:inline-block;
+.motto{
+  display:table;
+  margin:0 auto;
+  padding-top: 20px;
 }
 
-.motto li{
+#horizotal-list ul{
+  min-width: 696px;
+  list-style:none;
+  padding-top:20px;
+}
+
+#horizontal-list li{
+  min-width:2em;
+  display:inline;
+  font-size:16px;
   color:#000000;
-  text-decoration:;
+  list-style-type:none;
   font-weight:bold;
-  float:left;
-  margin:0 auto;
-  padding: 2em 2em 2em 2em;
+  padding:4em 3em 3em 3em;
+}
+
+#mStatement{
+  width: 100#;
+  margin-top:14rem;
+
 }

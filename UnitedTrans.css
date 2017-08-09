@@ -12,28 +12,59 @@ body{
   width:100%;
 }
 
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  width:70%;
+  margin:0 auto;
+
+
+}
+
 .container{
+  padding:10% 0 0 0;
+  margin:0;
   display:flex;
-  background-color:#b5bec3;
-  margin:10em auto;
-  overflow:hidden;
-  border:#16102f 2px solid;
-  width:72%;
+  -ms-box-orient:horizontal;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-moz-flex;
+  display:-webkit-flex;
+  text-decoration-style:none;
+
+  justify-content:flex-start | space-around;
+  align-items:flex-end | stretch;
+  flex-flow: row wrap;
 }
 
-#mStatement{
-  flex:2;
-  order:2;
+.container h2{
+  padding:25% 0 0 0;
+  font-weight: 5px bold;
 }
 
-#map{
-    width:100%;
-    height:20em;
-    background-color:grey;
-    margin-bottom: 15px;
+.container h3{
+  padding:5% 0 0 5%;
 }
 
-#page-wrap{
+.container p{
+  padding:3em 0 1em 0;
+  margin: 2em 0 0 0;
+}
+
+
+.flex-item li{
+  list-style-type:none;
+  width:225px;
+  height:121px;
+  margin:3px 3px 0 0;
+  align-self:flex-end | baseline;
+  display:inline;
+  float:right;
+  flex:0 1 auto;
+  border:2px solid #000000;
+  background:#bebfdf;
+  text-align:center;
 
 
 }
@@ -69,7 +100,7 @@ header ul{
 }
 
 header li{
-  float:left;
+  float:right;
   display:inline;
   padding:1em 1em 1em 1em;
 }
@@ -93,6 +124,71 @@ header a:hover{
   color:#bebfdf;
   font-weight:bold;
 }
+
+
+
+#map{
+    width:100%;
+    height:20em;
+    background-color:grey;
+    margin-bottom: 15px;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*.motto{
   display:table;
